@@ -1,0 +1,35 @@
+{
+  "name": "rw-monorepo",
+  "version": "1.0.0",
+  "description": "RW React 组件库 Monorepo",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "dev": "lerna run dev --parallel",
+    "clean": "lerna run clean",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "bootstrap": "lerna bootstrap"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "monorepo"
+  ],
+  "author": "你的名字",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.11",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "lerna": "^8.2.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.44.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.3"
+  }
+}
