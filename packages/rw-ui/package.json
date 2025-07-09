@@ -1,36 +1,61 @@
 {
-  "name": "@rw/ui",
-  "version": "1.0.0",
-  "description": "RW React UI 组件库",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "name": "@rowan287630/ui",
+  "version": "0.1.0",
+  "description": "RW React UI 组件库 - 现代化的 React 组件集合",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.esm.js",
       "require": "./dist/index.js"
-    },
-    "./styles": "./dist/index.css"
+    }
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "lint": "echo \"lint: no lint script yet\"",
+    "test": "echo \"test: no test script yet\"",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "typescript",
+    "tailwindcss",
+    "design-system"
+  ],
+  "author": "rowan <row287630@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowan766/rowan-react-monorepo/tree/main/packages/rw-ui"
+  },
+  "homepage": "https://github.com/rowan766/rowan-react-monorepo/tree/main/packages/rw-ui/README.md",
+  "bugs": {
+    "url": "https://github.com/rowan766/rowan-react-monorepo/issues"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
   "devDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "rimraf": "^6.0.1"
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
   },
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "clsx": "^2.1.1"
   }
 }
