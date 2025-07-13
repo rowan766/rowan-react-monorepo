@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 // 导入真正的 Button 组件
-import { Button } from '@rw/ui'
+import { Button } from '@rowan287630/ui'
 
 const ButtonDemo: React.FC = () => {
   const [clickCount, setClickCount] = useState(0)

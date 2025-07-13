@@ -23,7 +23,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
-    "@rw/ui": "workspace:*",
+    "@rowan287630/ui": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

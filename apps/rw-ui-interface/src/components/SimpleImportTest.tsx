@@ -1,6 +1,6 @@
 import React from 'react'
 // 直接导入 Button 组件
-import { Button } from '@rw/ui'
+import { Button } from '@rowan287630/ui'
 
 const SimpleImportTest: React.FC = () => {
   const [clickCount, setClickCount] = React.useState(0)

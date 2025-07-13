@@ -1,6 +1,7 @@
 import React from 'react'
-import SimpleImportTest from './components/SimpleImportTest'
-import ButtonDemo from './components/ButtonDemo'
+// import SimpleImportTest from './components/SimpleImportTest'
+// import ButtonDemo from './components/ButtonDemo'
+import FormTest from './components/FormTest'
 
 const App: React.FC = () => {
   return (
@@ -13,8 +14,9 @@ const App: React.FC = () => {
       </header>
 
       <main className="demo-container py-8">
-        <SimpleImportTest />
-        <ButtonDemo />
+        {/* <SimpleImportTest />
+        <ButtonDemo /> */}
+        <FormTest></FormTest>
       </main>
 
       <footer className="bg-white border-t mt-12">
